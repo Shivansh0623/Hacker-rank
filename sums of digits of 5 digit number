@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+
+int main() {
+    int n1, n2, n3, n4, n5, n6, n7, n8, n9, sum;
+    
+    scanf("%d", &n1);
+    if (n1<= 99999 && 10000<=n1){
+    
+    n2 = n1%10;
+    n3 = n1/10;
+    n4 = n3%10;
+    n5 = n3/10;
+    n6 = n5%10;
+    n7 = n5/10;
+    n8 = n7%10;
+    n9 = n7/10;
+    
+    sum = n2 + n4 + n6 + n8 + n9;
+    printf("%d", sum);}
+    else {
+        printf("Error");
+    }
+    return 0;
+}
